@@ -1,0 +1,15 @@
+941e5b9b0f8b64b5637bffd622fc713b *DESCRIPTION
+22e6d123dda34989d5c997d437f13962 *NAMESPACE
+3dd484155d8e5c544d2dd7acfa5c33d6 *R/HMMmix.r
+5b011dc2ac330ecc612c65c0f46a7278 *R/Internal.r
+f0339a98374817192193799db8c4890b *R/plotHMMmix.r
+b9ac4ec45f219abaa4bb7c7384a5c388 *R/rnormMix.r
+a0d74db868cda141054155a330697b62 *R/zzz.r
+59e5f17c7940645260ccbe3a47d3d3bd *man/HMMmix.Rd
+9e8adc13ed9e004f441c13c2b43b71b9 *man/plotHMMmix.Rd
+5022079d5ff034fedcffe1f3a5ca84b2 *man/rnormMix.Rd
+6e465b2ab4fe2341d9a0ad7a874dc990 *src/Backward.c
+03690bf17c86d3d1ebdc75d8b5696e63 *src/Convert.c
+2cde9ce1540220fd3df1bf75d776d4ff *src/Convert.h
+c8989963d564862e8df4574dd857f03b *src/Forward.c
+0783ea48fbd515c4699db99cd447dcc5 *src/Makevars
