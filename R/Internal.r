@@ -557,9 +557,9 @@
   Entropy	= EM$Entropy
   crit.vect	= numeric()
 
-  critere 	= loglik- (1+ 2*B+B*(B-1))/2 * log(n)
+  critere 	= loglik- (1+ 2*B+B*(B-1))/2 * log(n) ##BIC
   crit.vect[1] 	= critere
-  crit.vect[2] 	= loglik -Entropy - (1+ 2*B+B*(B-1))/2 * log(n)
+  crit.vect[2] 	= loglik -Entropy - (1+ 2*B+B*(B-1))/2 * log(n) ##ICLS
 
   F = EM$F
   G = EM$G
@@ -820,9 +820,10 @@
   if(i<j)
   {
   rHMM = .Reduce(MatS,Tau,n,i,j,MatInd)
-  cl = .Critere_likelihood(rHMM,PhiS,PhiZ)
-
-  return(cl$critere)
+  cl = .Critere_likelihood(rHMM,PhiS,PhiZ) 
+  cl2 = cl$critere - cl$Entropy #ICLS
+  return(cl$critere) #BIC
+  #return(cl2)
   }
 
   else return(-.Machine$double.xmax)

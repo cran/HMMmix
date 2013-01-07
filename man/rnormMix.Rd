@@ -64,7 +64,6 @@ plot(data,col=class)
 
 }
 
-\keyword{internal}
 
 
 

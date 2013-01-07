@@ -15,14 +15,8 @@ plotHMMmix(x)
 
 }
 
-\value{
-Plot the main results.
 
 
-}
-
-
-\keyword{internal}
 
 
 

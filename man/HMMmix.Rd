@@ -6,7 +6,8 @@
 Compute a hierarchical algorithm which combine the K components of a HMM. It leads to a D-states HMM with mixture of Gaussian as emission distribution. 
 }
 \usage{
-HMMmix(data,K=5, D=4, IterationMax=1000, Threshold=1e-3,pruning.th=1,reestimateEM=1)
+HMMmix(data,K=5, D=4, IterationMax=1000, Threshold=1e-3,pruning.th=1,
+reestimateEM=1) 
 }
 
 
@@ -17,7 +18,7 @@ HMMmix(data,K=5, D=4, IterationMax=1000, Threshold=1e-3,pruning.th=1,reestimateE
   \item{IterationMax}{An integer that corresponds to the maximum number of iterations allowed for the EM algorithm. The default is 1000.}
   \item{Threshold}{The threshold of convergence for the EM algorithm. The default is 1e-3.}
   \item{pruning.th}{A real between 0 and 1. Approximation of the merging criteria to speed up the calculations. DEFAULT VALUE is equal to 1 corresponding to not using the pruning.}
-  \item{IterationMax}{An integer that corresponds to the number of EM iterations for reestimating the parameters after combination. The default is 1.}
+  \item{reestimateEM}{An integer that corresponds to the number of EM iterations for reestimating the parameters after combination. The default is 1.}
 
 }
 
@@ -73,7 +74,6 @@ result = HMMmix(data,4,2)
 plotHMMmix(result)
 }
 
-\keyword{internal}
 
 
 
